@@ -1,0 +1,14 @@
+{
+  "name": "visualizations",
+  "version": "1.0.0",
+  "description": "Visualizations for Health Insights",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DSC UMass",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^5.14.1"
+  }
+}
