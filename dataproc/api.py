@@ -12,11 +12,11 @@ apiDescription = [
     }
 ]
 
-@app.route('/show-tell/api/v1.0/about', methods=['GET'])
+@app.route('/health-insights/api/v1.0/about', methods=['GET'])
 def get_tasks():
     return jsonify({'description': apiDescription[0]})
 
-@app.route('/show-tell/api/v1.0/<string:query>', methods=['GET'])
+@app.route('/health-insights/api/v1.0/<string:query>', methods=['GET'])
 def get_query(query):
     return jsonify({'response': query})
 
