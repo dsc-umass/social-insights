@@ -1,17 +1,6 @@
 # health-insights
 A big data project on building a public API with insights to a dataset for healthcare
 
-## Development 
-
-To run and setup the project you need node.js and NPM installed for the visualizations, which can be found [here](https://nodejs.org/en/). For the data processing you need python which can found [here](https://www.python.org/downloads/release/python-374/).
-
-To get started on visualizations:
-```
-git clone https://github.com/dsc-umass/meetsync.git
-cd health-insights/visualizations
-npm install
-```
-
 
 ## Getting Started
 
@@ -19,33 +8,27 @@ npm install
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+To run and setup the project you need node.js and NPM installed for the visualizations, which can be found [here](https://nodejs.org/en/). For the data processing you need python which can found [here](https://www.python.org/downloads/release/python-374/).
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+To get started on visualizations:
 ```
-Give the example
-```
+git clone https://github.com/dsc-umass/meetsync.git
 
-And repeat
+cd health-insights/visualizations
 
+npm install
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To get started on visualizations:
+```
+cd dataproc/
+
+sudo pm2 start api.py --name health-insights --interpreter=python3
+```
 
 ## Built With
 
