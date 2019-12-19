@@ -4,6 +4,7 @@ A big data project on building a public API with insights to a dataset for healt
 
 ## Getting Started
 
+Data
 
 
 ### Prerequisites
@@ -14,20 +15,18 @@ To run and setup the project you need node.js and NPM installed for the visualiz
 
 To get started on visualizations:
 ```
-git clone https://github.com/dsc-umass/meetsync.git
+git clone https://github.com/dsc-umass/health-insights.git
 
-cd health-insights/visualizations
-
-npm install
+python3 setup.py
 ```
-
+<!-- 
 ## Deployment
 
 To get started on visualizations:
 ```
 cd dataproc/
 
-sudo pm2 start api.py --name health-insights --interpreter=python3
+sudo pm2 start api.py --name health-insights --interpreter=python3 -->
 ```
 
 ## Built With
