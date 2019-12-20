@@ -4,8 +4,10 @@ A big data project on building a public API with insights to a dataset for healt
 
 ## Getting Started
 
-Data
-
+The project is broken down into 3 parts: 
+* dataproc: All the health insights, database work, processing insights and the raw intelligence. 
+* search-engine: The API work and the querying/search engine system
+* web: the web server to render visualization and integrate dataproc and search-engine components
 
 ### Prerequisites
 
