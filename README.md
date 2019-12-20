@@ -11,7 +11,7 @@ The project is broken down into 3 parts:
 
 ### Prerequisites
 
-To run and setup the project you need node.js and NPM installed for the visualizations, which can be found [here](https://nodejs.org/en/). For the data processing you need python which can found [here](https://www.python.org/downloads/release/python-374/).
+To run and setup the project you need python, node.js and NPM installed for the visualizations, which can be found [here](https://nodejs.org/en/). For the data processing you need python which can found [here](https://www.python.org/downloads/release/python-374/).
 
 ### Installing
 
