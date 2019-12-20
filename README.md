@@ -9,6 +9,8 @@ The project is broken down into 3 parts:
 * search-engine: The API work and the querying/search engine system
 * web: the web server to render visualization and integrate dataproc and search-engine components
 
+![Overall Architecture](assets/planning-architecture.png)
+
 ### Prerequisites
 
 To run and setup the project you need python, node.js and NPM installed for the visualizations, which can be found [here](https://nodejs.org/en/). For the data processing you need python which can found [here](https://www.python.org/downloads/release/python-374/).
