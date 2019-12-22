@@ -17,11 +17,20 @@ To run and setup the project you need python, node.js and NPM installed for the 
 
 ### Installing
 
-To get started on visualizations:
+To get started on search-engine and dataproc:
 ```
 git clone https://github.com/dsc-umass/health-insights.git
 
 python3 setup.py
+```
+
+To get started on website:
+```
+git clone https://github.com/dsc-umass/health-insights.git
+
+cd web
+
+yarn install
 ```
 <!-- 
 ## Deployment
