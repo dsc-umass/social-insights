@@ -37,4 +37,5 @@ sudo pm2 start api.py --name health-insights --interpreter=python3 -->
 * [GCP Dataproc](https://cloud.google.com/dataproc/) - Spark and Hadoop on the Cloud
 * [Flask](http://flask.palletsprojects.com/en/1.1.x/) - API Framework
 * [PM2](https://pm2.keymetrics.io/) - Production Server and Load Balancing
+* [React](https://reactjs.org/) - Frontend framework for the website
 
