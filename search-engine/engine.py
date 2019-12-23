@@ -14,4 +14,8 @@ def singleWordQuery(query):
     return "this is a single word query"
 
 
+def rawDataSetQuery(query):
+    return "This is a raw query to the dataset"
+
+
 print(query("test"))
