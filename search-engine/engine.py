@@ -33,6 +33,7 @@ def context(query):
     tagged = nltk.pos_tag(tokens)
     print(tagged)
     properNouns = [word for word,pos in tagged if pos == 'NNP'] 
+    nouns = [word for word,pos in tagged if pos == 'NN'] 
     print(properNouns)
     return "done"
 
