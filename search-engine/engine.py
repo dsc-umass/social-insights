@@ -2,8 +2,6 @@
 
 import nltk
 
-
-
 # Main Method to Manipulate and understand queries
 def query(query):
     tokens = nltk.word_tokenize(query)
