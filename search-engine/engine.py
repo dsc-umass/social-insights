@@ -18,4 +18,12 @@ def rawDataSetQuery(query):
     return "This is a raw query to the dataset"
 
 
+def context(query):
+    return "This is the context of the query"
+
+
 print(query("test"))
+
+
+def suggest(query):
+    return "did you mean this?"
