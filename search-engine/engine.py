@@ -2,6 +2,8 @@
 
 import nltk
 
+
+
 # Main Method to Manipulate and understand queries
 def query(query):
     tokens = nltk.word_tokenize(query)
@@ -29,7 +31,16 @@ def rawDataSetQuery(query):
 
 # Method to understand context in query and sentence structure
 def context(query):
-    return "This is the context of the query"
+    tokens = nltk.word_tokenize(query)
+    print(tokens)
+    tagged = nltk.pos_tag(tokens)
+
+    properNouns = [word for word,pos in tagged if pos == 'NNP'] 
+    print(properNouns)
+    return "done"
+
+context("Michael Jackson was a legandary basketball player who played in New York.")
+
 
 # Method for query suggest on the frontend
 def suggest(query):
