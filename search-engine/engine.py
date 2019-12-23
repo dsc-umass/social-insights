@@ -1,8 +1,10 @@
 # Search Engine/Query Management System for Health Insights
 
 import nltk
-sentence = "hello world"
 
-tokens = nltk.word_tokenize(sentence)
+def context(query):
+    tokens = nltk.word_tokenize(query)
+    return tokens
 
-print(tokens)
+
+print(context("hello world"))
