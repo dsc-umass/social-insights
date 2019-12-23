@@ -23,6 +23,7 @@ def singleWordQuery(query):
     return "this is a single word query"
 
 
+# Method to Retrive simple dataset queries that query the dataset tables directly
 def rawDataSetQuery(query):
     return "This is a raw query to the dataset"
 
