@@ -6,6 +6,7 @@ import nltk
 def query(query):
     tokens = nltk.word_tokenize(query)
     print(tokens)
+    
     if(len(tokens) == 1):
         return singleWordQuery(query)
 
