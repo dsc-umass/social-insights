@@ -30,9 +30,8 @@ def rawDataSetQuery(query):
 # Method to understand context in query and sentence structure
 def context(query):
     tokens = nltk.word_tokenize(query)
-    print(tokens)
     tagged = nltk.pos_tag(tokens)
-
+    print(tagged)
     properNouns = [word for word,pos in tagged if pos == 'NNP'] 
     print(properNouns)
     return "done"
