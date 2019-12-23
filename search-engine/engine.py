@@ -31,11 +31,6 @@ def rawDataSetQuery(query):
 
 # Method to understand context in query and sentence structure
 def context(query):
-    """ 
-    Keywords that inform contex
-    
-    
-    """
     tokens = nltk.word_tokenize(query)
     print(tokens)
     tagged = nltk.pos_tag(tokens)
