@@ -2,9 +2,16 @@
 
 import nltk
 
-def context(query):
+
+def query(query):
     tokens = nltk.word_tokenize(query)
-    return tokens
+    print(tokens)
+    if(len(tokens) == 1):
+        return singleWordQuery(query)
 
 
-print(context("hello world"))
+def singleWordQuery(query):
+    return "this is a single word query"
+
+
+print(query("test"))
