@@ -13,6 +13,7 @@ Suggest will work the following way:
     - Trending searchs that are relevant to user's search
     - Queries that we can actually answer and have data on
 """
+
 def context(query):
     tokens = nltk.word_tokenize(query)
     tagged = nltk.pos_tag(tokens)
