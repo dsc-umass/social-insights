@@ -47,4 +47,8 @@ def edit_distance(s1, s2):
 def spellcheck(query):
     tokens = nltk.word_tokenize(query)
     spell = SpellChecker()
-    
+    spellQuery = ''
+    for word in tokens:
+        spellQuery += spell.correction(word) + " "
+    return spellQuery
+
