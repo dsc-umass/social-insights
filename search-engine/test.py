@@ -3,7 +3,7 @@ from engine import query
 
 
 # Tests on Core Search
-def queryTest():
+def singleQueryTest():
     print("Single work query:")
     assert query("hello") == "this is a single word query"
 
