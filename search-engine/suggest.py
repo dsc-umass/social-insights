@@ -27,7 +27,6 @@ def context(query):
 def suggest(query):
     return "did you mean this?"
 
-startTime()
 def edit_distance(s1, s2):
     m=len(s1)+1
     n=len(s2)+1
@@ -42,4 +41,18 @@ def edit_distance(s1, s2):
 
     return tbl[i,j]
 
-print(edit_distance("Helloworld ahsd", "HalloWorld"))
+# print(edit_distance("Helloworld ahsd", "HalloWorld"))
+
+
+
+spell = SpellChecker()
+
+# find those words that may be misspelled
+misspelled = spell.unknown(['something', 'is', 'hapenning', 'here'])
+
+for word in misspelled:
+    # Get the one `most likely` answer
+    print(spell.correction(word))
+
+    # Get a list of `likely` options
+    print(spell.candidates(word))
