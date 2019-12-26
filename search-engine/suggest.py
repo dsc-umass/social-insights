@@ -2,13 +2,8 @@ import nltk
 import time
 
 
-start_time = 0
-
-def startTime():
-    start_time = time.time()
-
-def endTime():
-    print("--- %s seconds ---" % (time.time() - start_time))
+start_time = time.time()
+# print("--- %s seconds ---" % (time.time() - start_time))
     
 
 """
@@ -48,5 +43,3 @@ def edit_distance(s1, s2):
     return tbl[i,j]
 
 print(edit_distance("Helloworld ahsd", "HalloWorld"))
-
-endTime()
