@@ -44,17 +44,7 @@ def edit_distance(s1, s2):
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
 
-
-spell = SpellChecker()
-
-# find those words that may be misspelled
-misspelled = spell.unknown(["wrogn"])
-
-print(spell.correction("wrogn"))
-
-# for word in misspelled:
-#     # Get the one `most likely` answer
-#     print(spell.correction(word))
-
-#     # Get a list of `likely` options
-#     print(spell.candidates(word))
+def spellcheck(query):
+    tokens = nltk.word_tokenize(query)
+    spell = SpellChecker()
+    
