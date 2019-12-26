@@ -1,9 +1,15 @@
 import nltk
 import time
-start_time = time.time()
 
-def checkTime():
+
+start_time = 0
+
+def startTime():
+    start_time = time.time()
+
+def endTime():
     print("--- %s seconds ---" % (time.time() - start_time))
+    
 
 """
 Suggest will work the following way:
@@ -26,7 +32,7 @@ def context(query):
 def suggest(query):
     return "did you mean this?"
 
-
+startTime()
 def edit_distance(s1, s2):
     m=len(s1)+1
     n=len(s2)+1
@@ -42,3 +48,5 @@ def edit_distance(s1, s2):
     return tbl[i,j]
 
 print(edit_distance("Helloworld ahsd", "HalloWorld"))
+
+endTime()
