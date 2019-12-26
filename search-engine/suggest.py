@@ -1,6 +1,6 @@
 import nltk
 import time
-
+from spellchecker import SpellChecker
 
 start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
@@ -48,11 +48,13 @@ def edit_distance(s1, s2):
 spell = SpellChecker()
 
 # find those words that may be misspelled
-misspelled = spell.unknown(['something', 'is', 'hapenning', 'here'])
+misspelled = spell.unknown(["wrogn"])
 
-for word in misspelled:
-    # Get the one `most likely` answer
-    print(spell.correction(word))
+print(spell.correction("wrogn"))
 
-    # Get a list of `likely` options
-    print(spell.candidates(word))
+# for word in misspelled:
+#     # Get the one `most likely` answer
+#     print(spell.correction(word))
+
+#     # Get a list of `likely` options
+#     print(spell.candidates(word))
