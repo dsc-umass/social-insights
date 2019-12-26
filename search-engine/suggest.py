@@ -27,6 +27,7 @@ def context(query):
 def suggest(query):
     return "did you mean this?"
 
+# Levenshtein Distance Algorithm implemented with Dynamic Programming
 def edit_distance(s1, s2):
     m=len(s1)+1
     n=len(s2)+1
@@ -43,6 +44,8 @@ def edit_distance(s1, s2):
 
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
+# Function to check spellings of a 
+# sentence and suggest correction
 
 def spellcheck(query):
     tokens = nltk.word_tokenize(query)
