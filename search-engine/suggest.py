@@ -53,3 +53,4 @@ def spellcheck(query):
         spellQuery += spell.correction(word) + " "
     return spellQuery
 
+print(spellcheck("I thinnk there must be something int he thing"))
