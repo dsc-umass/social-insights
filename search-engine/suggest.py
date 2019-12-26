@@ -9,9 +9,8 @@ start_time = time.time()
 """
 Suggest will work the following way:
     - Spellcheck 
-    - Both have to be as close as the current query:
-        Suggest queries that you have searched before
-        Trending searchs
+    - Suggest queries that the user has searched before(personalization)
+    - Trending searchs that are relevant to user's search
 """
 def context(query):
     tokens = nltk.word_tokenize(query)
