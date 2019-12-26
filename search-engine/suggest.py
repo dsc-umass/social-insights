@@ -11,7 +11,9 @@ Suggest will work the following way:
     - Spellcheck 
     - Suggest queries that the user has searched before(personalization)
     - Trending searchs that are relevant to user's search
+    - Queries that we can actually answer and have data on
 """
+
 def context(query):
     tokens = nltk.word_tokenize(query)
     tagged = nltk.pos_tag(tokens)
@@ -42,8 +44,7 @@ def edit_distance(s1, s2):
 
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
-# Function to check spellings of a 
-# sentence and suggest correction
+# Check spellings of queries and suggest corrections
 
 def spellcheck(query):
     tokens = nltk.word_tokenize(query)
@@ -53,3 +54,4 @@ def spellcheck(query):
         spellQuery += spell.correction(word) + " "
     return spellQuery
 
+print(spellcheck("I thinnk there must be something int he thing"))
