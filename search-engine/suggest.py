@@ -42,6 +42,12 @@ def edit_distance(s1, s2):
 
     return tbl[i,j]
 
+# Using Edit Distance to show the closest query
+testArr = ["Heloooo", "Helojaops", "ihaisd", "Helo", "jaoisjdj"]
+def closestQuery(query):
+    
+
+
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
 # Check spellings of queries and suggest corrections
