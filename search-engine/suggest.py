@@ -2,7 +2,7 @@ import nltk
 import time
 from spellchecker import SpellChecker
 
-start_time = time.time()
+# start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
     
 
@@ -58,10 +58,7 @@ def closestQuery(query):
     return closestQ
 
 
-print(closestQuery("hello"))
 
-
-# print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
 # Check spellings of queries and suggest corrections
 
