@@ -1,2 +1,4 @@
-for i in range(5):
-    print(i)
+
+testArr = ["h", "2", "3"]
+
+print(testArr[len(testArr)])

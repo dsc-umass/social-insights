@@ -48,13 +48,16 @@ def closestQuery(query):
     minDistance = edit_distance(query, testArr[0])
     closestQ = testArr[0]
 
-    for i in range(1, len(testArr)):
+    for i in range(1, len(testArr) - 1):
         if(edit_distance(query, testArr[i]) < minDistance):
             minDistance = edit_distance(query, testArr[i])
             closestQ = testArr[i]
     
     return closestQ
 
+
+print(closestQuery("hello"))
+print("--- %s seconds ---" % (time.time() - start_time))
 
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
