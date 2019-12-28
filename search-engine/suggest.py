@@ -45,7 +45,15 @@ def edit_distance(s1, s2):
 # Using Edit Distance to show the closest query
 testArr = ["Heloooo", "Helojaops", "ihaisd", "Helo", "jaoisjdj"]
 def closestQuery(query):
+    minDistance = edit_distance(query, testArr[0])
+    closestQ = testArr[0]
+
+    for i in range(1, len(testArr)):
+        if(edit_distance(query, testArr[i]) < minDistance):
+            minDistance = edit_distance(query, testArr[i])
+            closestQ = testArr[i]
     
+    return closestQ
 
 
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
@@ -59,5 +67,3 @@ def spellcheck(query):
     for word in tokens:
         spellQuery += spell.correction(word) + " "
     return spellQuery
-
-print(spellcheck("I thinnk there must be something int he thing"))
