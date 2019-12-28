@@ -42,8 +42,10 @@ def edit_distance(s1, s2):
 
     return tbl[i,j]
 
-# Using Edit Distance to show the closest query
+
 testArr = ["Heloooo", "Helojaops", "ihaisd", "Helo", "jaoisjdj"]
+
+# Using Edit Distance to show the closest query
 def closestQuery(query):
     minDistance = edit_distance(query, testArr[0])
     closestQ = testArr[0]
@@ -57,7 +59,7 @@ def closestQuery(query):
 
 
 print(closestQuery("hello"))
-print("--- %s seconds ---" % (time.time() - start_time))
+
 
 # print(edit_distance("Helloworld ahsd", "HalloWorld"))
 
