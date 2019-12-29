@@ -9,10 +9,10 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 
-doc_ref = db.collection(u'cities').document(u'SF')
+doc_ref = db.collection('trending-searches').document('searches-log')
 
 try:
     doc = doc_ref.get()
-    print(u'Document data: {}'.format(doc.to_dict()))
+    print('Document data: {}'.format(doc.to_dict()))
 except google.cloud.exceptions.NotFound:
-    print(u'No such document!')
+    print('No such document!')
