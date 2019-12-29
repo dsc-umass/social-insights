@@ -1,6 +1,16 @@
 # Search Engine/Query Management System for Health Insights
 
 import nltk
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+
+# Use a service account with DB
+cred = credentials.Certificate('firebase-admin-key.json')
+firebase_admin.initialize_app(cred)
+
+db = firestore.client()
+
 
 # Main Method to Manipulate and understand queries
 def query(query):
@@ -40,7 +50,7 @@ def context(query):
 context("Michael Jackson was a legandary basketball player who played in New York.")
 
 def updateLogs(query):
-    return "done"
+    r
 
 def engine(query):
     return query
