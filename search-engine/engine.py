@@ -50,7 +50,8 @@ def context(query):
 context("Michael Jackson was a legandary basketball player who played in New York.")
 
 def updateLogs(query):
-    r
+    doc_ref = db.collection('trending-searches').document('searches-log')
+    
 
 def engine(query):
     return query

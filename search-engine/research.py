@@ -1,6 +1,2 @@
-json = {}
-
-
-json['key'] = 'value'
-
-print(json)
+import datetime
+print(datetime.datetime.now())
