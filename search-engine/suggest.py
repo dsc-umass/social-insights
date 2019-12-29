@@ -23,10 +23,6 @@ def context(query):
     print(properNouns)
     return "done"
 
-
-def suggest(query):
-    return "did you mean this?"
-
 # Levenshtein Distance Algorithm implemented with Dynamic Programming
 def edit_distance(s1, s2):
     m=len(s1)+1
@@ -69,3 +65,8 @@ def spellcheck(query):
     for word in tokens:
         spellQuery += spell.correction(word) + " "
     return spellQuery
+
+
+
+def suggest(query):
+    return "hello world"
