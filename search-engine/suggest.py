@@ -2,7 +2,7 @@ import nltk
 import time
 from spellchecker import SpellChecker
 
-start_time = time.time()
+# start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
     
 
@@ -13,19 +13,6 @@ Suggest will work the following way:
     - Trending searchs that are relevant to user's search
     - Queries that we can actually answer and have data on
 """
-
-def context(query):
-    tokens = nltk.word_tokenize(query)
-    tagged = nltk.pos_tag(tokens)
-    print(tagged)
-    properNouns = [word for word,pos in tagged if pos == 'NNP'] 
-    nouns = [word for word,pos in tagged if pos == 'NN'] 
-    print(properNouns)
-    return "done"
-
-
-def suggest(query):
-    return "did you mean this?"
 
 # Levenshtein Distance Algorithm implemented with Dynamic Programming
 def edit_distance(s1, s2):
@@ -57,11 +44,8 @@ def closestQuery(query):
     
     return closestQ
 
-
-print(closestQuery("hello"))
-
-
-# print(edit_distance("Helloworld ahsd", "HalloWorld"))
+def trendingSearch():
+    return "trending searches"
 
 # Check spellings of queries and suggest corrections
 
@@ -72,3 +56,12 @@ def spellcheck(query):
     for word in tokens:
         spellQuery += spell.correction(word) + " "
     return spellQuery
+
+
+
+def suggest(query):
+    json = {}
+    json['spellcheck'] = spellcheck(query)
+    json['closest-query'] = closestQuery(query)
+    json['trending-searches'] = trendingSearch()
+    return json
