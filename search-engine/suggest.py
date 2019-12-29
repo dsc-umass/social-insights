@@ -53,8 +53,8 @@ def closestQuery(query):
     
     return closestQ
 
-
-
+def trendingSearch():
+    return "trending searches"
 
 # Check spellings of queries and suggest corrections
 
@@ -69,4 +69,8 @@ def spellcheck(query):
 
 
 def suggest(query):
-    return "hello world"
+    json = {}
+    json['spellcheck'] = spellcheck(query)
+    json['closest-query'] = closestQuery(query)
+    json['trending-searches'] = trendingSearch()
+    return json
