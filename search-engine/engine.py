@@ -38,3 +38,9 @@ def context(query):
     return "done"
 
 context("Michael Jackson was a legandary basketball player who played in New York.")
+
+def updateLogs(query):
+    return "done"
+
+def engine(query):
+    return query
