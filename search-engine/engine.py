@@ -52,8 +52,7 @@ def updateLogs(query):
     doc_ref = db.collection('trending-searches').document('searches-log')
     try:
         doc_ref.set({
-            "hello world": datetime.datetime.now(),
-            "hello": datetime.datetime.now()
+            query: datetime.datetime.now()
         }, merge=True)
         print("Logs Updated")
     except:
