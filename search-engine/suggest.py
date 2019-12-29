@@ -4,7 +4,6 @@ from spellchecker import SpellChecker
 
 # start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
-    
 
 """
 Suggest will work the following way:
