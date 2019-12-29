@@ -14,15 +14,6 @@ Suggest will work the following way:
     - Queries that we can actually answer and have data on
 """
 
-def context(query):
-    tokens = nltk.word_tokenize(query)
-    tagged = nltk.pos_tag(tokens)
-    print(tagged)
-    properNouns = [word for word,pos in tagged if pos == 'NNP'] 
-    nouns = [word for word,pos in tagged if pos == 'NN'] 
-    print(properNouns)
-    return "done"
-
 # Levenshtein Distance Algorithm implemented with Dynamic Programming
 def edit_distance(s1, s2):
     m=len(s1)+1
