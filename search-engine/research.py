@@ -1,7 +1,13 @@
 import jwt
+import json
 
-secret = "hello"
-encoded = jwt.encode({'some': 'payload'}, secret, algorithm='HS256')
+with open('secret.json') as json_file:
+    secret = json.load(json_file)['secret']
+
+dataJson = {
+    'hello': 'world'
+}
+encoded = jwt.encode(dataJson, secret, algorithm='HS256')
 
 print(encoded)
 
