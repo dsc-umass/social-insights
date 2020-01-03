@@ -25,7 +25,14 @@ def get_query(query):
     with open('secret.json') as json_file:
         secret = json.load(json_file)['secret']
 
-    decoded = jwt.decode(query, secret, algorithms=['HS256'])
+    decoded = ""
+    
+    try :
+        decoded = jwt.decode(query, secret, algorithms=['HS256'])
+
+    except:
+        return "error"
+    
         
     return jsonify({'response': decoded})
 
