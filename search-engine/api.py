@@ -1,6 +1,9 @@
 from flask import Flask, jsonify
 from flask import abort
 
+import jwt
+import json
+
 app = Flask(__name__)
 
 #API description
@@ -18,7 +21,13 @@ def get_tasks():
 
 @app.route('/health-insights/api/v1.0/<string:query>', methods=['GET'])
 def get_query(query):
-    return jsonify({'response': query})
+
+    with open('secret.json') as json_file:
+        secret = json.load(json_file)['secret']
+
+    decoded = jwt.decode(query, secret, algorithms=['HS256'])
+        
+    return jsonify({'response': decoded})
 
 
 # Helper Functions 
