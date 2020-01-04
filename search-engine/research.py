@@ -31,7 +31,12 @@ allWordExceptStopDist = nltk.FreqDist(w.lower() for w in allWords if w not in st
 
 mostCommon = allWordExceptStopDist.most_common(10)
 
-print(mostCommon)
+test = []
+for word, frequency in mostCommon:
+    if word != '.' and word != ',':
+        test.append(word)
+
+print(test)
 
 # for word, frequency in allWordDist.most_common(10):
 #     print('%s;%d' % (word, frequency))
