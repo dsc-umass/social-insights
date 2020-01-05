@@ -19,3 +19,17 @@ def updateLogs(query):
         print("Logs Updated")
     except:
         print("Error updating logs")
+
+
+import random
+
+nouns = ("puppy", "car", "rabbit", "girl", "monkey")
+verbs = ("runs", "hits", "jumps", "drives", "barfs") 
+adv = ("crazily", "dutifully", "foolishly", "merrily", "occasionally")
+adj = ("adorable", "clueless", "dirty", "odd", "stupid")
+
+for i in range(10):
+    num = random.randrange(0,5)
+    randomQuery = nouns[num] + ' ' + verbs[num] + ' ' + adv[num] + ' ' + adj[num]
+    print (randomQuery)
+    updateLogs(randomQuery)
