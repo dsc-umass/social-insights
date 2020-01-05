@@ -37,13 +37,15 @@ print(mostCommonQuery)
 
 topSearches_tags = db.collection('trending-searches').document('top-searches-tags')
 
-for i in range(len(mostCommonQuery) - 1):
+for i in range(len(mostCommonQuery)):
     try :
         topSearches_tags.set({
             mostCommonQuery[i]: i
         }, merge=True)
     except:
         print("error")
+
+print("Successfully Updated top-searches-tags")
 
 
 
