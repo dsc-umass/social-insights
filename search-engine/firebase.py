@@ -10,13 +10,16 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 doc_ref = db.collection('trending-searches').document('searches-log')
 
-# try:
-#     doc = doc_ref.get()
-#     print('Document data: {}'.format(doc.to_dict()))
-# except google.cloud.exceptions.NotFound:
-#     print('No such document!')
+try:
+    doc = doc_ref.get()
+    # print('Document data: {}'.format(doc.to_dict()))
+    returnJson = doc.to_dict()
+    for key, value in returnJson:
+        print(key)
+except google.cloud.exceptions.NotFound:
+    print('No such document!')
 
-doc_ref.set({
-    "hello world": datetime.datetime.now(),
-    "hello": datetime.datetime.now()
-}, merge=True)
+# doc_ref.set({
+#     "hello world": datetime.datetime.now(),
+#     "hello": datetime.datetime.now()
+# }, merge=True)
