@@ -25,3 +25,20 @@ print(test)
 #     "hello world": datetime.datetime.now(),
 #     "hello": datetime.datetime.now()
 # }, merge=True)
+
+
+# Create a reference to the cities collection
+cities_ref = db.collection(u'cities')
+
+# Create a query against the collection
+query_ref = cities_ref.where(u'state', u'==', u'CA')
+
+
+cities_ref = db.collection(u'cities')
+
+query = cities_ref.where(u'capital', u'==', True)
+
+
+cities_ref.where(u'state', u'==', u'CA')
+cities_ref.where(u'population', u'<', 1000000)
+cities_ref.where(u'name', u'>=', u'San Francisco')
