@@ -61,4 +61,5 @@ def updateLogs(query):
 
 def engine(query):
     updateLogs(query)
+    context(query)
     return query
