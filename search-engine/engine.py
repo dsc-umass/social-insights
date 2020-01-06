@@ -58,8 +58,8 @@ def updateLogs(query):
     except:
         print("Error updating logs")
 
-updateLogs("test hello")
 
 def engine(query):
     updateLogs(query)
+    context(query)
     return query
