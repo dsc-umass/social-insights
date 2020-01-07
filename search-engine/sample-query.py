@@ -23,13 +23,13 @@ def updateLogs(query):
 
 import random
 
-nouns = ("puppy", "car", "rabbit", "girl", "monkey")
-verbs = ("runs", "hits", "jumps", "drives", "barfs") 
-adv = ("crazily", "dutifully", "foolishly", "merrily", "occasionally")
-adj = ("adorable", "clueless", "dirty", "odd", "stupid")
+nouns = ("puppy", "car", "rabbit", "girl", "monkey", "guy", "truck", "laptop")
+verbs = ("runs", "hits", "jumps", "drives", "barfs", "dances", "coughs", "sneezes") 
+adv = ("crazily", "dutifully", "foolishly", "merrily", "occasionally", "joyfully", "lavishly", "harmlessly")
+adj = ("adorable", "clueless", "dirty", "odd", "stupid", "smart", "happy", "even")
 
 for i in range(10):
-    num = random.randrange(0,5)
+    num = random.randrange(0,8)
     randomQuery = nouns[num] + ' ' + verbs[num] + ' ' + adv[num] + ' ' + adj[num]
     print (randomQuery)
     updateLogs(randomQuery)
