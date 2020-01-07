@@ -32,4 +32,4 @@ for i in range(10):
     num = random.randrange(0,8)
     randomQuery = nouns[num] + ' ' + verbs[num] + ' ' + adv[num] + ' ' + adj[num]
     print (randomQuery)
-    # updateLogs(randomQuery)
+    updateLogs(randomQuery)
