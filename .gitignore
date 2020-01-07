@@ -2,3 +2,5 @@ web/node_modules
 search-engine/__pycache__
 search-engine/firebase-admin-key.json
 search-engine/secret.json
+
+# jupyter notebooks
