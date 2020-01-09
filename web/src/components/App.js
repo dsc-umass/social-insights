@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import '../App.css';
-import Search from './Search'
 import Results from './Results'
+import Home from './Home'
+
 import {
   BrowserRouter,
   Route,
@@ -11,9 +12,12 @@ import {
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1 align='center'>Health-Insights</h1>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/results' component={Results} />
+        </div>
+      </BrowserRouter>
     )
   }
 }
