@@ -7,7 +7,7 @@ export default function Results(props) {
             <ul>
                 {props.list.map((result) => (
                     <li key={result.url}>
-                        <a href='result.url'>{result.header}</a>
+                        <a href={result.url}>{result.header}</a>
                     </li>
                 ))}
             </ul>
