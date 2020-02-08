@@ -1,4 +1,4 @@
-# health-insights
+# social-insights
 A big data project on building a search engine to search insights from public health datasets
 
 
