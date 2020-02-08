@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
-import Results from './Results'
-import Search from './Search'
+import AutoComplete from './AutoComplete';
 
 import {
   BrowserRouter,
@@ -10,16 +9,16 @@ import {
 } from 'react-router-dom'
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <BrowserRouter>
-        <div align='center'>
-            <h1>Health Insights</h1>
-        </div>
-        <div>
-          <Route exact path='/' component={Search} />
-        </div>
-      </BrowserRouter>
+      <div>
+        <AutoComplete />
+      </div>
     )
   }
 }
