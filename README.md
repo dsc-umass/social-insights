@@ -1,5 +1,5 @@
 # social-insights
-A big data project on building a search engine to search insights from public health datasets
+Social insights is an open source big data project that generates insights about elections and everything related to politics specifically in context to the United States. Data sources include the Twitter API. There is a search engine built to query the insights.
 
 
 ## Getting Started
