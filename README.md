@@ -4,7 +4,7 @@ Social insights is an open source big data project that generates insights about
 ## Getting Started
 
 The project is broken down into 3 parts: 
-* dataproc: All the health insights, database work, processing insights and the raw intelligence. 
+* dataproc: All the analytics, database work, and ML. 
 * search-engine: The API work and the querying/search engine system
 * web: the web server to render visualization and integrate dataproc and search-engine components
 
