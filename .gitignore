@@ -7,3 +7,6 @@ search-engine/secret.json
 dataproc/.ipynb_checkpoints
 dataproc/Pit_Stop_Locations_Data_Exp.ipynb
 dataproc/data-analytics/data_profile.ipynb
+
+# API Keys:
+dataproc/keys.py
