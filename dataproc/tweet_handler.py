@@ -8,7 +8,7 @@ from twitter_auth import *
 from keys import *
 
 # Function to extract tweets 
-def get_tweets(username): 
+def get_tweets_per_user(username): 
 
     authorize()          
     # Authorization to consumer key and consumer secret 
@@ -36,4 +36,36 @@ def get_tweets(username):
         writer.writerow(['User_Name', 'Tweet_ID', 'Source', 'Created_date','Retweet_count','Favorite_count','Tweet'])
         writer.writerows(twitter_record)
     # user name
-get_tweets("@realDonaldTrump")  
+#get_tweets_per_user("@realDonaldTrump")  
+
+
+def get_tweets_per_hashtag(hashtags="", date_select=""):
+    authorize()
+    # Authorization to consumer key and consumer secret 
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret) 
+
+    # Access to user's access key and access secret 
+    auth.set_access_token(access_token_key, access_token_secret) 
+
+    # Calling api 
+    api = tweepy.API(auth)
+    tweet_record = []
+
+    search = hashtags + " -filter:retweets"
+    for tweet in tweepy.Cursor(api.search,
+              q=search,
+              lang="en",
+              since=date_select).items():
+        tweet_record.append([tweet.user.screen_name, tweet.user.location, tweet.retweet_count, tweet.text.encode("utf-8")])
+    
+    #write to a new csv file from the array of tweets
+    outfile = "../assets/" + "hashtags2" + "_tweets_V1.csv"
+    print ("writing to " + outfile)
+    with open(outfile, 'w+') as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        writer.writerow(['User', 'Location', "Retweet Count", 'Tweet'])
+        writer.writerows(tweet_record)
+
+# tag="#2020Election"
+# date="2018-02-01"
+get_tweets_per_hashtag("#2020Election", "2018-02-01")

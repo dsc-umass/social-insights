@@ -1,3 +1,0 @@
-# Sentiment Analysis from Twitter
-
-
