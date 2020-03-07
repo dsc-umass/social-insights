@@ -1,4 +1,6 @@
 [![License](https://img.shields.io/badge/License-GPL%203.0-brightgreen.svg)](./LICENSE)
+![GitHub stars](https://img.shields.io/github/stars/dsc-umass/social-insights.svg)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/dsc-umass/social-insights.svg?color=red)
 
 # social-insights
 Social insights is an open source big data project that generates insights about various interesting topics happening every day. Currently, we are focusing on political sentiment analysis due to the upcoming elections in the United States. Data sources include the Twitter API. There is a search engine built to query the insights.
