@@ -22,13 +22,6 @@ def query(query):
     if(len(tokens) == 1):
         return singleWordQuery(query)
 
-# Method to handle single word queries like:
-""" 
-Hospital
-
-San Francisco
-
-"""
 
 def singleWordQuery(query):
     return "this is a single word query"
