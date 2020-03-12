@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #36D1DC, #5B86E5);
+  background: linear-gradient(to right, rgb(54, 187, 220), #5B86E5);
   font-family: 'Raleway', sans-serif;
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
