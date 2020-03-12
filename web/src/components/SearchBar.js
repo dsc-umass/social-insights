@@ -11,6 +11,7 @@ class SearchBar extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSelect = this.handleSelect.bind(this);
     }
 
     handleChange(e) {
@@ -20,6 +21,10 @@ class SearchBar extends Component {
     handleSubmit(e) {
         e.preventDefault();
         this.setState({typing: false, query: ""});
+    }
+
+    handleSelect(r) {
+        this.setState({query: r});
     }
 
     render() {
@@ -41,9 +46,8 @@ class SearchBar extends Component {
                         <i className="fas fa-search"></i>
                     </button>
                 </div>
-                <SearchAutoComplete typing={this.state.typing}/>
+                <SearchAutoComplete query={this.state.query} typing={this.state.typing} onSelect={this.handleSelect}/>
             </div>
-            
         )
     }
 }

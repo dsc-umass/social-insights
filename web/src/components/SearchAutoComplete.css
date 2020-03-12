@@ -13,9 +13,9 @@
     -o-border-radius: 0rem 0rem .5rem .5rem;
 }
 
-.AutoComplete-list ul {
-    display: block;
-    float: left;
+li {
+    display: flex;
+    flex-flow: wrap;
     padding: .5rem;
 }
 
