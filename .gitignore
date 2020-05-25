@@ -4,5 +4,3 @@ search-engine/firebase-admin-key.json
 search-engine/secret.json
 
 # jupyter notebooks
-dataproc/dash_app
-dataproc/dsc-web-scraper
