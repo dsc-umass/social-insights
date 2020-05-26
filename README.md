@@ -20,11 +20,17 @@ To run and setup the project you need python, node.js and NPM installed for the 
 
 ### Installing
 
-To get started on search-engine and dataproc:
+To get started on backend:
 ```
 git clone https://github.com/dsc-umass/social-insights.git
 
-python3 setup.py
+cd backend
+
+pip3 install pipenv
+
+pipenv shell
+
+pipenv install
 ```
 
 To get started on website:
