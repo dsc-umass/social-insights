@@ -4,12 +4,6 @@ import nltk
 import firebase_admin
 import datetime
 
-# Use a service account with DB
-cred = credentials.Certificate('firebase-admin-key.json')
-firebase_admin.initialize_app(cred)
-
-db = firestore.client()
-
 
 # Main Method to Manipulate and understand queries
 def query(query):
