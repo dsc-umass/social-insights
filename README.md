@@ -24,8 +24,6 @@ To get started on backend:
 ```
 git clone https://github.com/dsc-umass/social-insights.git
 
-cd backend
-
 pip3 install pipenv
 
 pipenv shell
