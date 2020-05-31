@@ -1,6 +1,6 @@
 web/node_modules
-backend/__pycache__
-backend/firebase-admin-key.json
-backend/secret.json
+__pycache__
+firebase-admin-key.json
+secret.json
 .vscode/
 
