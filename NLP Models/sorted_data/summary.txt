@@ -1,0 +1,70 @@
+apparel/negative.review	1000
+apparel/positive.review	1000
+apparel/unlabeled.review	7252
+automotive/negative.review	152
+automotive/positive.review	584
+baby/negative.review	900
+baby/positive.review	1000
+baby/unlabeled.review	2356
+beauty/negative.review	493
+beauty/positive.review	1000
+beauty/unlabeled.review	1391
+books/negative.review	1000
+books/positive.review	1000
+books/unlabeled.review	973194
+camera & photo/negative.review	999
+camera & photo/positive.review	1000
+camera & photo/unlabeled.review	5409
+cell phones & service/negative.review	384
+cell phones & service/positive.review	639
+computer & video games/negative.review	458
+computer & video games/positive.review	1000
+computer & video games/unlabeled.review	1313
+dvd/negative.review	1000
+dvd/positive.review	1000
+dvd/unlabeled.review	122438
+electronics/negative.review	1000
+electronics/positive.review	1000
+electronics/unlabeled.review	21009
+gourmet food/negative.review	208
+gourmet food/positive.review	1000
+gourmet food/unlabeled.review	367
+grocery/negative.review	352
+grocery/positive.review	1000
+grocery/unlabeled.review	1280
+health & personal care/negative.review	1000
+health & personal care/positive.review	1000
+health & personal care/unlabeled.review	5225
+jewelry & watches/negative.review	292
+jewelry & watches/positive.review	1000
+jewelry & watches/unlabeled.review	689
+kitchen & housewares/negative.review	1000
+kitchen & housewares/positive.review	1000
+kitchen & housewares/unlabeled.review	17856
+magazines/negative.review	970
+magazines/positive.review	1000
+magazines/unlabeled.review	2221
+music/negative.review	1000
+music/positive.review	1000
+music/unlabeled.review	172180
+musical instruments/negative.review	48
+musical instruments/positive.review	284
+office products/negative.review	64
+office products/positive.review	367
+outdoor living/negative.review	327
+outdoor living/positive.review	1000
+outdoor living/unlabeled.review	272
+software/negative.review	915
+software/positive.review	1000
+software/unlabeled.review	475
+sports & outdoors/negative.review	1000
+sports & outdoors/positive.review	1000
+sports & outdoors/unlabeled.review	3728
+tools & hardware/negative.review	14
+tools & hardware/positive.review	98
+toys & games/negative.review	1000
+toys & games/positive.review	1000
+toys & games/unlabeled.review	11147
+video/negative.review	1000
+video/positive.review	1000
+video/unlabeled.review	34180
