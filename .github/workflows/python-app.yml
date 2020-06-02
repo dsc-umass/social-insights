@@ -24,7 +24,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pipenv
-        pipenv shell
         pipenv install 
     - name: Unittests
       run: |
