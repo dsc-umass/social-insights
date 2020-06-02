@@ -4,3 +4,17 @@ firebase-admin-key.json
 secret.json
 .vscode/
 
+# Ignore Files for NLP task
+.DS_STORE
+Test.py
+*.pkl
+*.pickle
+*.review
+*.balanced
+*.random
+C-BOW
+C-OneHot
+C-TFIDF
+SLS Preprocessed data
+Sample Annotated Dataset
+
