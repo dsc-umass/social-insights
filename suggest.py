@@ -1,4 +1,4 @@
-import nltk
+# import nltk
 import time
 # from spellchecker import SpellChecker
 

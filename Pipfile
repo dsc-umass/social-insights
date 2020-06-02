@@ -6,11 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-fastapi = "*"
 uvicorn = "*"
-nltk = "*"
-indexer = "*"
-spellchecker = "*"
+fastapi = "*"
 
 [requires]
 python_version = "3.8"
