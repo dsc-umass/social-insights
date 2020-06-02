@@ -1,6 +1,6 @@
 import nltk
 import time
-from spellchecker import SpellChecker
+# from spellchecker import SpellChecker
 
 # start_time = time.time()
 # print("--- %s seconds ---" % (time.time() - start_time))
@@ -64,3 +64,4 @@ def suggest(query):
     json['closest-query'] = closestQuery(query)
     json['trending-searches'] = trendingSearch()
     return json
+

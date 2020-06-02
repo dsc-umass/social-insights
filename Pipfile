@@ -8,6 +8,10 @@ verify_ssl = true
 [packages]
 fastapi = "*"
 uvicorn = "*"
+unittest = "*"
+nltk = "*"
+indexer = "*"
+spellchecker = "*"
 
 [requires]
 python_version = "3.8"
