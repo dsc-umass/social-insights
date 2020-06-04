@@ -4,7 +4,7 @@ firebase-admin-key.json
 secret.json
 .vscode/
 
-# Ignore Files for NLP task
+# Ignore the following files for NLP task
 .DS_STORE
 Test.py
 *.pkl
