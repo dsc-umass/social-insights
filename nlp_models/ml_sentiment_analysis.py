@@ -19,8 +19,8 @@ import re
 
 # %% Setting the directory
 os.chdir(sys.path[0])
-dataset_path = '../sorted_data/'
-models_path = '../Models/'
+dataset_path = '../dataset/'
+models_path = '../models/'
 
 #%% Loading the dataset
 start = time()

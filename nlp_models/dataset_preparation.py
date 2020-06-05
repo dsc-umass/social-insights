@@ -6,9 +6,11 @@ from time import time
 import io # for handling files
 import pickle# for storing large files
 
-#%% Defining directories
+#%% Setting the directory
+dataset_path = '../dataset/'
+models_path = '../models/'
+
 os.chdir(sys.path[0])
-dataset_path = '../sorted_data/'
 os.chdir(dataset_path)
 print(os.getcwd())
 

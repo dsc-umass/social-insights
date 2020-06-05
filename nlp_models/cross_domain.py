@@ -19,8 +19,8 @@ import re
 
 
 #%% Setting the directory
-dataset_path = '/Users/anirudhmuthukumar/Downloads/CS589/Extra Credit/sorted_data/'
-models_path = '/Users/anirudhmuthukumar/Downloads/CS589/Extra Credit/Models/'
+dataset_path = '../dataset/'
+models_path = '../models/'
 
 #%% Loading the dataset
 start = time()
