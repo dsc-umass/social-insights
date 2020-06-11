@@ -12,6 +12,8 @@ Test.py
 *.review
 *.balanced
 *.random
+*.txt
+*.csv
 C-BOW
 C-OneHot
 C-TFIDF
