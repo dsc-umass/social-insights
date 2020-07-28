@@ -39,6 +39,16 @@ cd web
 
 yarn install
 ```
+### Django Development 
+Getting Started with Django Development
+
+After creating pipenv shell to run the development server:
+```
+cd webpages
+
+python manage.py runserver
+
+```
 <!-- 
 ## Deployment
 

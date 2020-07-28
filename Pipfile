@@ -9,6 +9,7 @@ verify_ssl = true
 uvicorn = "*"
 fastapi = "*"
 pytest = "*"
+django = "*"
 
 [requires]
 python_version = "3.8"
