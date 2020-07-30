@@ -16,7 +16,8 @@ from numpy import asarray
 from numpy import zeros
 import matplotlib.pyplot as plt
 from numpy import array
-
+import pickle
+import keras
 from keras.preprocessing.text import one_hot
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import Sequential
@@ -33,14 +34,13 @@ from keras.layers import LSTM
 # In[59]:
 
 
-dataset_path = sys.path[0] + '/dataset/'
-model_path  = sys.path[0] + '/models/'
+dataset_path = sys.path[0] + '/static/dataset/'
+model_path  = sys.path[0] + '/static/models/'
 
 
 # ### Loading the Twitter dataset
 
 # In[60]:
-
 
 tweets_dataset = pd.read_csv(dataset_path + 'twitter_sentiments.csv')
 
@@ -49,7 +49,6 @@ tweets_dataset = pd.read_csv(dataset_path + 'twitter_sentiments.csv')
 
 
 print(tweets_dataset.shape)
-print(tweets_dataset.head(10))
 
 
 # In[62]:
@@ -92,12 +91,6 @@ for sen in sentences:
     X.append(preprocess_text(sen))
 
 
-# In[65]:
-
-
-print(X[5])
-
-
 # In[75]:
 
 
@@ -116,6 +109,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random
 
 tokenizer = Tokenizer(num_words=5000)
 tokenizer.fit_on_texts(X_train)
+
+pickle_file = open(dataset_path + "tokenizer.pickle", "wb")
+pickle.dump(tokenizer, pickle_file)
+pickle_file.close()
 
 X_train = tokenizer.texts_to_sequences(X_train)
 X_test = tokenizer.texts_to_sequences(X_test)
@@ -218,7 +215,6 @@ plt.show()
 
 
 # In[87]:
-
-
 model.save(model_path + 'rnn_lstm_twitter.h5')
+
 
