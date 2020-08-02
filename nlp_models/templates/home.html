@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Twitter Sentiment Classification
+        </title>
+    </head>
+    <body>
+        <table id='main_table' align='center'>
+            <tr>
+                <th> ID </th>
+                <th> Tweet </th>
+                <th> Sentiment </th>
+            </tr>
+            {% for i in range(size) %}
+                <tr>
+                    <td> {{ content['ID'][i] }} </td> 
+                    <td> {{ content['TWEET'][i] }} </td> 
+                    <td> {{ content['SENTIMENT'][i] }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
