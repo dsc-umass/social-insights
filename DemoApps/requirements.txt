@@ -1,4 +1,0 @@
-tweepy
-pandas
-sklearn
-joblib
